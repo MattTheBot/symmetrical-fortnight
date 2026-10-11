@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-layout="a">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>[Brand Name] — Catholic Menswear</title>
+  <meta name="description" content="Heavyweight, honestly cut menswear for Catholic men. Ten percent of profit is given to pro-life charities.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+
+  <!-- Apply the saved navigation layout before first paint to avoid a flash. -->
+  <script>
+    (function () {
+      try {
+        var saved = window.localStorage.getItem('mc-nav-layout');
+        document.documentElement.setAttribute('data-layout', saved === 'b' ? 'b' : 'a');
+      } catch (error) {
+        document.documentElement.setAttribute('data-layout', 'a');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <button id="menuToggle" class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a class="wordmark" href="#" aria-label="[Brand Name] — home">[Brand Name]</a>
+
+      <nav class="top-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#">Craft</a></li>
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="cart-link" href="#collection">Cart <span id="cartCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation" aria-hidden="true">
+    <div class="sidebar__head">
+      <span class="wordmark wordmark--small">[Brand Name]</span>
+      <button class="sidebar__close" id="sidebarClose" type="button" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <nav class="sidebar__nav" aria-label="Sidebar">
+      <ul>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#">Craft</a></li>
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">Stockists</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="sidebar__tagline">
+      Garments for men who pray, work, and stand firm. Cut in limited runs, never in a hurry.
+    </p>
+  </aside>
+
+  <!-- Main -->
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="eyebrow">Established MMXXV &middot; Catholic Menswear</p>
+        <h1 class="hero__title" id="hero-title">Dress like a man who answers to God.</h1>
+        <p class="hero__sub">
+          Heavyweight cotton, honest wool, and cuts that hold their shape through a decade of Sundays. Made for the pew, the office, and everywhere else the day asks you to stand firm.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#collection">Shop the collection</a>
+          <a class="btn btn--ghost" href="#mission">Our mission</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <div class="ph ph--hero" role="img" aria-label="Placeholder for campaign photography">
+          <span class="ph__label" aria-hidden="true">Campaign image</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collection -->
+    <section class="section" id="collection" aria-labelledby="collection-title">
+      <div class="section__head">
+        <p class="eyebrow">The Collection</p>
+        <h2 class="section__title" id="collection-title">Three garments, built to outlast the season they were bought in.</h2>
+      </div>
+
+      <ul class="product-grid">
+        <!-- Product 1 -->
+        <li class="product-card">
+          <div class="ph ph--product" role="img" aria-label="Placeholder image for the Oxford Shirt">
+            <span class="ph__label" aria-hidden="true">Product image 01</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">The Oxford Shirt</h3>
+            <p class="product-card__desc">Heavyweight Egyptian cotton, cut straight and finished by hand.</p>
+            <p class="product-card__price">$168</p>
+            <button class="btn btn--solid btn--block" type="button" data-add-to-cart="The Oxford Shirt">Add to cart</button>
+          </div>
+        </li>
+
+        <!-- Product 2 -->
+        <li class="product-card">
+          <div class="ph ph--product" role="img" aria-label="Placeholder image for the Merino Crew">
+            <span class="ph__label" aria-hidden="true">Product image 02</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">The Merino Crew</h3>
+            <p class="product-card__desc">Fine-gauge merino, ribbed at the collar, quiet in every room.</p>
+            <p class="product-card__price">$195</p>
+            <button class="btn btn--solid btn--block" type="button" data-add-to-cart="The Merino Crew">Add to cart</button>
+          </div>
+        </li>
+
+        <!-- Product 3 -->
+        <li class="product-card">
+          <div class="ph ph--product" role="img" aria-label="Placeholder image for the Field Jacket">
+            <span class="ph__label" aria-hidden="true">Product image 03</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">The Field Jacket</h3>
+            <p class="product-card__desc">Waxed cotton, four pockets, built for weather and for work.</p>
+            <p class="product-card__price">$340</p>
+            <button class="btn btn--solid btn--block" type="button" data-add-to-cart="The Field Jacket">Add to cart</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Mission -->
+    <section class="mission" id="mission" aria-labelledby="mission-title">
+      <div class="mission__inner">
+        <div class="mission__head">
+          <p class="eyebrow">The Tithe</p>
+          <h2 class="mission__title" id="mission-title">Ten percent of profit, given without exception.</h2>
+        </div>
+        <div class="mission__body">
+          <p>Every garment sold returns ten percent of its profit to pro-life charities — the ones that house expectant mothers, fund pregnancy care, and defend the unborn when defending them costs something.</p>
+          <p>It is not a campaign and there is no month for it. Ten percent of profit leaves this company every year, whether the year was good or bad, and we publish where it went.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <p class="wordmark wordmark--footer">[Brand Name]</p>
+        <p class="footer-tagline">Garments for men who pray, work, and stand firm.</p>
+      </div>
+      <nav class="footer-col" aria-label="Shop">
+        <h2 class="footer-heading">Shop</h2>
+        <ul class="footer-links">
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#collection">Shirts</a></li>
+          <li><a href="#collection">Outerwear</a></li>
+          <li><a href="#">Size guide</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="House">
+        <h2 class="footer-heading">House</h2>
+        <ul class="footer-links">
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#">Craft</a></li>
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">Stockists</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h2 class="footer-heading">Instagram</h2>
+        <ul class="footer-links">
+          <li><a href="#" rel="noopener">@brand.placeholder</a></li>
+          <li><a href="#" rel="noopener">@brand.archive</a></li>
+          <li><a href="#" rel="noopener">@brand.makers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 [Brand Name]. All rights reserved.</p>
+      <ul class="footer-legal">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Shipping &amp; returns</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Layout Preview Toggle -->
+  <div class="layout-toggle" role="group" aria-label="Preview navigation layout">
+    <p class="layout-toggle__label" id="layoutToggleLabel">Nav preview</p>
+    <div class="layout-toggle__buttons">
+      <button type="button" class="layout-btn" data-layout-set="a" aria-pressed="true" aria-describedby="layoutToggleLabel">A &middot; Sidebar</button>
+      <button type="button" class="layout-btn" data-layout-set="b" aria-pressed="false" aria-describedby="layoutToggleLabel">B &middot; Top bar</button>
+    </div>
+  </div>
+
+  <p class="visually-hidden" role="status" id="layoutStatus"></p>
+  <p class="visually-hidden" role="status" id="cartStatus"></p>
+
+</body>
+</html>
